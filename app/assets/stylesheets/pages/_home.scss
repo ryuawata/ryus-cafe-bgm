@@ -1,7 +1,21 @@
 // Specific CSS for your home-page
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+audio {
+  width: 154px;
+  // border: 1px solid black;
+}
+
 audio:hover {
-  transform: scale(1.1);
-  filter: drop-shadow(2px 3px 3px #333);
+  // filter: drop-shadow(1px 1px 1px #333);
+}
+
+audio::-webkit-media-controls-panel {
+  border-radius: 0px;
 }
 
 audio::-webkit-media-controls-timeline-container {
@@ -15,4 +29,34 @@ audio::-webkit-media-controls-current-time-display {
 }
 audio::-webkit-media-controls-time-remaining-display {
   display: none;
+}
+audio::-webkit-media-controls-volume-slider-container {
+  display:block;
+}
+audio::-webkit-media-controls-volume-slider {
+  display:block;
+}
+
+.audio-elements {
+  p {
+    font-size: 13px;
+  }
+}
+
+// bootstrap slider bar
+
+.custom-range {
+  width: 50%;
+}
+
+.custom-range::-webkit-slider-thumb {
+  background: rgb(0, 0, 0);
+}
+
+.custom-range::-moz-range-thumb {
+  background: rgb(0, 0, 0);
+}
+
+.custom-range::-ms-thumb {
+  background: rgb(0, 0, 0);
 }
