@@ -45,4 +45,18 @@ audio::-webkit-media-controls-volume-slider {
 
 // bootstrap slider bar
 
+.custom-range {
+  width: 50%;
+}
 
+.custom-range::-webkit-slider-thumb {
+  background: rgb(0, 0, 0);
+}
+
+.custom-range::-moz-range-thumb {
+  background: rgb(0, 0, 0);
+}
+
+.custom-range::-ms-thumb {
+  background: rgb(0, 0, 0);
+}
