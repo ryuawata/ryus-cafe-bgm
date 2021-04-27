@@ -18,8 +18,13 @@
         <source src="https://docs.google.com/uc?export=download&id=1zU0r1c_BhaOWrF3JM6Z_oJZd_I_WNcxr">
       </audio>
     </div>
-    <label for="customRange">Time Machine Radio</label>
-    <input type="range" class="custom-range" min="0" max="5" id="customRange">
+    <div class="radio">
+      <label for="customRange">Time Machine Radio</label>
+      <input type="range" class="custom-range" min="0" max="5" value="4"id="customRange">
+      <button onclick="playAudio()" type="button">Play Audio</button>
+      <button onclick="pauseAudio()" type="button">Pause Audio</button>
+      <div id="radio"></div>
+    </div>
   </div>
   <iframe src="https://open.spotify.com/embed/playlist/0vvXsWCC9xrXsKd4FyS8kM" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 </div>
