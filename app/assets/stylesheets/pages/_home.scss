@@ -30,11 +30,10 @@ audio::-webkit-media-controls-current-time-display {
 audio::-webkit-media-controls-time-remaining-display {
   display: none;
 }
-audio::-webkit-media-controls-volume-slider-container {
-  display:block;
+audio::-webkit-media-controls-volume-slider-container:hover {
+  width: 154px;
 }
 audio::-webkit-media-controls-volume-slider {
-  display:block;
 }
 
 .audio-elements {
@@ -59,4 +58,8 @@ audio::-webkit-media-controls-volume-slider {
 
 .custom-range::-ms-thumb {
   background: rgb(0, 0, 0);
+}
+
+.radio {
+
 }

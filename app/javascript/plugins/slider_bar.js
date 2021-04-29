@@ -4,37 +4,28 @@ function radioUpdate() {
   //retrieve value = station
   let station = inputs[0]["value"];
   console.log(typeof(station));
+  let id = ""
   //autoplay the specific file
   if (station === "0") {
-    document.getElementById('radio').innerHTML = "<audio controls autoplay><source src='https://docs.google.com/uc?export=download&id=1rvXZGGuG0ohU5cy97cvtoowObmMoNuNd'></audio>";
-    console.log("Hey");
+    id = '1rvXZGGuG0ohU5cy97cvtoowObmMoNuNd';
   }
   else if (station === "1") {
-    document.getElementById('radio').innerHTML = "<audio controls autoplay><source src='https://docs.google.com/uc?export=download&id=1ZcjPpYRNieWd_cRbHqKEjbSjQmPzJJAN'></audio>";
+    id = '1ZcjPpYRNieWd_cRbHqKEjbSjQmPzJJAN';
   }
   else if (station === "2") {
-    document.getElementById('radio').innerHTML = "<audio controls autoplay><source src='https://docs.google.com/uc?export=download&id=1qZrwHI1i9_-iAe_phCR_Oo_6vD5PcHqC'></audio>";
+    id = '1qZrwHI1i9_-iAe_phCR_Oo_6vD5PcHqC';
   }
   else if (station === "3") {
-    document.getElementById('radio').innerHTML = "<audio controls autoplay><source src='https://docs.google.com/uc?export=download&id=1CaCxsQCEAupe2uaIwRVDIOnpeimrjjcx'></audio>";
+    id = '1CaCxsQCEAupe2uaIwRVDIOnpeimrjjcx';
   }
   else if (station === "4") {
-    document.getElementById('radio').innerHTML = "<audio controls autoplay><source src='https://docs.google.com/uc?export=download&id=1E-2urkXhqa2uIXRYchA2ztcH0doltaO_'></audio>";
+    id = '1E-2urkXhqa2uIXRYchA2ztcH0doltaO_';
   }
   else if (station === "5") {
-    document.getElementById('radio').innerHTML = "<audio controls autoplay><source src='https://docs.google.com/uc?export=download&id=1shxm3tDf1Yi6a0CajZa9n1472MMLpNAE'></audio>";
+    id = '1shxm3tDf1Yi6a0CajZa9n1472MMLpNAE';
   };
-  // let newStation = document.getElementById('radio')
-  // newStation.play
+  document.getElementById('radio').innerHTML = `<audio controls autoplay><source src='https://docs.google.com/uc?export=download&id=${id}'></audio><p>Channel ${parseInt(station) + 1}</p>`;
 };
 inputs.forEach(input => input.addEventListener('change', radioUpdate));
-
-function playAudio() { 
-  x.play(); 
-} 
-
-function pauseAudio() { 
-  x.pause(); 
-} 
 
 export { radioUpdate };
