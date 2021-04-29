@@ -82,6 +82,13 @@ audio::-webkit-media-controls-volume-slider {
 #radio-audio {
   display: flex;
   align-items: center;
+  p {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    margin-left: 4px;
+    height: 54px;
+  }
 }
 
 .radio #radio-top {
@@ -90,8 +97,34 @@ audio::-webkit-media-controls-volume-slider {
 }
 
 .slide {
+
   img {
     max-width: 500;
+  }
+}
+
+.carousel-indicators {
+  position: relative;
+  bottom: 6%;
+}
+
+.carousel-inner {
+  overflow: visible;
+}
+
+.carousel-item {
+  position: relative;
+  z-index: -1;
+
+  .carousel-caption {
+    position: absolute;
+    z-index: 1;
+    bottom: -41%;
+    color: black;
+
+    p {
+      font-size: 12px;
+    }
   }
 }
 
@@ -103,10 +136,54 @@ audio::-webkit-media-controls-volume-slider {
     width: 300px;
     height: 380px;
     background-color: rgb(8, 61, 119);
-    z-index: -1;
+    z-index: -2;
     right: 9%;
     bottom: 8%;
   }
+
+  .carousel-inner {
+    overflow: hidden;
+    z-index: 2;
+  }
+
+  .carousel-item {
+
+  }
+
+  .carousel-control-prev {
+    z-index: 2;
+    transform: rotate(90deg);
+    top: -107%;
+    left: 45%;
+  }
+  .carousel-control-next {
+    z-index: 2;
+    transform: rotate(90deg);
+    bottom: -107%;
+    left: 45%;
+  }
+
+  .carousel-control-next-icon {
+    background-color: black;
+  }
+
+  .carousel-item-next.carousel-item-left,
+  .carousel-item-prev.carousel-item-right {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+  .carousel-item-next,
+  .active.carousel-item-right {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100% 0);
+}
+
+  .carousel-item-prev,
+  .active.carousel-item-left {
+-webkit-transform: translate3d(0,-100%, 0);
+        transform: translate3d(0,-100%, 0);
+}
 }
 
 footer {
