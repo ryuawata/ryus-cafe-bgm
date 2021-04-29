@@ -3,7 +3,7 @@
 .main {
   display: flex;
   justify-content: space-between;
-  margin: 24px 48px;
+  margin: 48px 48px;
 }
 
 audio {
@@ -38,15 +38,23 @@ audio::-webkit-media-controls-volume-slider {
 }
 
 .audio-elements {
+
+}
+
+.audio-element {
+  display: flex;
+  justify-content: start;
+  align-items: center;
   p {
     font-size: 13px;
+    margin: 0px;
   }
 }
 
 // bootstrap slider bar
 
 .custom-range {
-  width: 50%;
+  // width: 50%;
 }
 
 .custom-range::-webkit-slider-thumb {
@@ -62,7 +70,37 @@ audio::-webkit-media-controls-volume-slider {
 }
 
 .radio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  p {
+    font-size: 13px;
+    margin: 0px;
+  }
+}
 
+#radio-audio {
+  display: flex;
+  align-items: center;
+}
+
+.radio #radio-top {
+  display: flex;
+  align-items: center;
+}
+
+.spotify {
+  position: relative;
+
+  .spotify-background {
+    position: absolute;
+    width: 300px;
+    height: 380px;
+    background-color: rgb(8, 61, 119);
+    z-index: -1;
+    right: 9%;
+    bottom: 8%;
+  }
 }
 
 footer {
