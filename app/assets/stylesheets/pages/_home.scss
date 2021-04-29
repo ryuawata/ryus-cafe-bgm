@@ -89,6 +89,13 @@ audio::-webkit-media-controls-volume-slider {
   align-items: center;
 }
 
+.gif {
+  img {
+    height: 380px;
+    width: auto;
+  }
+}
+
 .spotify {
   position: relative;
 
