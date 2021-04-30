@@ -42,7 +42,7 @@ audio::-webkit-media-controls-volume-slider {
 }
 
 .audio-elements {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.7);
 
 }
 
@@ -102,7 +102,6 @@ audio::-webkit-media-controls-volume-slider {
 }
 
 #carouselExampleIndicators {
-  z-index: -100;
 
   .carousel-item {
     position: fixed; 
@@ -206,6 +205,9 @@ audio::-webkit-media-controls-volume-slider {
 }
 
 footer {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.3);
+  bottom: 0;
   display: flex;
   justify-content: center;
   padding: 0px 24px;
