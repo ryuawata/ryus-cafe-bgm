@@ -43,6 +43,8 @@ audio::-webkit-media-controls-volume-slider {
 
 .audio-elements {
   background-color: rgba(255, 255, 255, 0.7);
+  padding: 24px;
+  overflow-y: scroll;
 
 }
 
@@ -118,6 +120,11 @@ audio::-webkit-media-controls-volume-slider {
     z-index: 99;
   }
 
+  img {
+    // background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    opacity: 0.8;
+  }
+
 }
 
 .carousel-indicators {
@@ -133,16 +140,16 @@ audio::-webkit-media-controls-volume-slider {
   position: relative;
   z-index: -1;
 
-  // .carousel-caption {
-  //   position: absolute;
-  //   z-index: 1;
-  //   bottom: -41%;
-  //   color: black;
+  .carousel-caption {
+    position: absolute;
+    z-index: 1;
+    bottom: 50%;
+    // color: black;
 
-  //   p {
-  //     font-size: 12px;
-  //   }
-  // }
+    p {
+      font-size: 12px;
+    }
+  }
 }
 
 .spotify {
